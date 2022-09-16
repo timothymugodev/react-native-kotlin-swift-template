@@ -1,0 +1,61 @@
+{
+  "compilerOptions": {
+    /* Visit https://aka.ms/tsconfig.json to read more about this file */
+    "lib": [
+      "es2018",
+      "ESNext",
+      "esnext.asynciterable"
+    ], /* Specify a set of bundled library declaration files that describe the target runtime environment. */
+    "experimentalDecorators": true, /* Enable experimental support for TC39 stage 2 draft decorators. */
+    "emitDecoratorMetadata": true, /* Emit design-type metadata for decorated declarations in source files. */
+    /* Completeness */
+    "skipLibCheck": true,                              /* Skip type checking all .d.ts files. */
+    "strict": true,                                    /* Enable all strict type checking options. */
+    "target": "esnext",
+    "jsx": "react-native",
+    "baseUrl": ".",
+    "rootDir": ".",
+    "module": "es2015",
+    "allowJs": true, /* Allow JavaScript files to be a part of your program. Use the `checkJS` option to get errors from these files. */
+    "checkJs": true, /* Enable error reporting in type-checked JavaScript files. */
+    "paths": {
+      "@": [
+        "./src/*"
+      ],
+      "@example/app": [
+        "./src/app"
+      ],
+      "@example/components/*": [
+        "./src/components"
+      ],
+      "@example/config/*": [
+        "./src/config"
+      ],
+      "@example/hooks/*": [
+        "./src/hooks"
+      ],
+      "@example/navigation/*": [
+        "./src/navigation/*"
+      ],
+      "@example/services/*": [
+        "./src/services"
+      ],
+      "@example/screens/*": [
+        "./src/screens"
+      ],
+      "@example/types/*": [
+        "./src/types"
+      ],
+      "@example/utils/*": [
+        "./src/utils/*"
+      ],
+    },
+  },
+  "include": [
+    "./", 
+    "./App.tsx",
+    "index.js",
+    ".eslintrc.js"
+  ],
+  "extends": "@tsconfig/react-native/tsconfig.json",
+}
